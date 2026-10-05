@@ -1,0 +1,290 @@
+{
+  "active_body": "body_armless_v2",
+  "body_repair": "v5 generated armless torso; exactly two independent arm sprites; legacy body is never drawn",
+  "body_crop_boxes": {
+    "head": [
+      6,
+      18,
+      635,
+      559
+    ],
+    "body": [
+      643,
+      23,
+      1014,
+      561
+    ],
+    "arm_right": [
+      1191,
+      168,
+      1502,
+      516
+    ],
+    "arm_left": [
+      88,
+      598,
+      412,
+      953
+    ],
+    "braid_left": [
+      671,
+      567,
+      881,
+      1003
+    ],
+    "braid_right": [
+      1147,
+      567,
+      1346,
+      996
+    ]
+  },
+  "face_parts": {
+    "eyes_gentle": {
+      "resource_center": [
+        244.0,
+        190
+      ],
+      "source_cell": [
+        0,
+        200,
+        444,
+        480
+      ]
+    },
+    "eyes_longing": {
+      "resource_center": [
+        225.5,
+        190
+      ],
+      "source_cell": [
+        444,
+        200,
+        887,
+        480
+      ]
+    },
+    "eyes_smile": {
+      "resource_center": [
+        219.5,
+        190
+      ],
+      "source_cell": [
+        887,
+        200,
+        1330,
+        480
+      ]
+    },
+    "eyes_blink": {
+      "resource_center": [
+        210.0,
+        190
+      ],
+      "source_cell": [
+        1330,
+        200,
+        1774,
+        480
+      ]
+    },
+    "mouth_closed": {
+      "resource_center": [
+        253.5,
+        154.5
+      ],
+      "source_cell": [
+        0,
+        550,
+        444,
+        825
+      ]
+    },
+    "mouth_small": {
+      "resource_center": [
+        233.5,
+        150.5
+      ],
+      "source_cell": [
+        444,
+        550,
+        887,
+        825
+      ]
+    },
+    "mouth_medium": {
+      "resource_center": [
+        213.5,
+        152.0
+      ],
+      "source_cell": [
+        887,
+        550,
+        1330,
+        825
+      ]
+    },
+    "mouth_large": {
+      "resource_center": [
+        197.0,
+        149.5
+      ],
+      "source_cell": [
+        1330,
+        550,
+        1774,
+        825
+      ]
+    }
+  },
+  "base_height": 660,
+  "hero": "chifuyu_hero.png",
+  "parts_generated_by": "built-in image_gen edits of the approved hero",
+  "raster_processing": "unchanged RGBA crops, resize and rigid affine compositing only; no painted replacement facial features",
+  "face_mesh": false,
+  "audio_status": "v4 uses the user-provided Hanakuma Chifuyu AI 2 cover; external measured vocal-band amplitude plus lyric/rest gating controls the four mouth shapes, default closed. Not phoneme alignment.",
+  "rig_parts": {
+    "body": {
+      "parent": "root",
+      "resource": "body_armless_v2",
+      "anchor": [
+        520.5,
+        1505
+      ],
+      "scale": [
+        0.214,
+        0.214
+      ]
+    },
+    "arm_left": {
+      "parent": "body",
+      "at": [
+        -50,
+        -280
+      ],
+      "anchor": [
+        278,
+        43
+      ],
+      "scale": [
+        0.44,
+        0.44
+      ],
+      "rotation": "-1.8 + 2.1*sin(t*.72+.4)"
+    },
+    "arm_right": {
+      "parent": "body",
+      "at": [
+        52,
+        -280
+      ],
+      "anchor": [
+        41,
+        43
+      ],
+      "scale": [
+        0.44,
+        0.44
+      ],
+      "rotation": "1.8 + 2.1*sin(t*.72+1.8)"
+    },
+    "head": {
+      "parent": "body",
+      "at": [
+        "-.7*head_angle",
+        "-310+1.8*sin(t*.85)"
+      ],
+      "anchor": [
+        310,
+        481
+      ],
+      "scale": [
+        0.72,
+        0.72
+      ],
+      "rotation": "6.2*sin(t*.57+.2)+1.1*sin(t*.19)"
+    },
+    "braid_left": {
+      "parent": "head",
+      "at": [
+        -105,
+        -81
+      ],
+      "anchor": [
+        132,
+        26
+      ],
+      "scale": [
+        0.37,
+        0.5
+      ],
+      "rotation": "2.4*sin(t*.82-.5)"
+    },
+    "braid_right": {
+      "parent": "head",
+      "at": [
+        108,
+        -75
+      ],
+      "anchor": [
+        52,
+        28
+      ],
+      "scale": [
+        0.37,
+        0.5
+      ],
+      "rotation": "2.4*sin(t*.82+.7)"
+    },
+    "eyes_and_brows": {
+      "parent": "head",
+      "at": [
+        0,
+        -75
+      ],
+      "scale": [
+        0.48,
+        0.48
+      ],
+      "states": [
+        "gentle",
+        "longing",
+        "smile",
+        "blink"
+      ],
+      "each_pair_rigid": true
+    },
+    "mouth": {
+      "parent": "head",
+      "at": [
+        0,
+        -28
+      ],
+      "scale": [
+        0.36,
+        0.36
+      ],
+      "states": [
+        "closed",
+        "small",
+        "medium",
+        "large"
+      ],
+      "center_fixed_for_every_shape": true
+    }
+  },
+  "draw_order": [
+    "arm_left",
+    "arm_right",
+    "body",
+    "braid_left",
+    "braid_right",
+    "head",
+    "eyes_and_brows",
+    "mouth"
+  ],
+  "visible_hand_layers": [
+    "arm_left",
+    "arm_right"
+  ]
+}

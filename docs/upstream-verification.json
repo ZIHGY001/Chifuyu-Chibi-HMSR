@@ -1,0 +1,7 @@
+{
+  "spec_url": "https://github.com/yuyuyzl/halfne-miku-studio-reborn/blob/master/model-docs.md",
+  "retrieved_raw_url": "https://raw.githubusercontent.com/yuyuyzl/halfne-miku-studio-reborn/master/model-docs.md",
+  "retrieved_utc": "2026-10-05T19:06:56.657684+00:00",
+  "spec_sha256": "02a39a934fbdb53e165e2ad881ab7afaf2a8ff22b6c05d02f889b74d2902e9cc",
+  "runtime_note": "Locally retained upstream parseModelJS/core functions are used for offline native import and 360 frame motion QA. Browser UI import was not performed."
+}

@@ -1,0 +1,8 @@
+{
+  "tool": "built-in image_gen",
+  "edit_target": "Prior generated headless clothing/body layer",
+  "change": "Removed BOTH arms and BOTH sleeves entirely; preserved central hoodie body, white/charcoal chest bands, shirt and mint tie, purple checked skirt, two legs and boots. Transparent alpha. Soft pencil illustration. No head, no text, no new props.",
+  "invariants": "Exactly zero arms in body sprite; exactly one left arm sprite plus one right arm sprite in rig. Prior head, mouth, eyebrow/eye and braid assets preserved.",
+  "generated_body": "source/assets/body_armless_v2.png",
+  "other_layers": "Generated body/face atlas crops from earlier approved Chifuyu hero. No official image file is included."
+}

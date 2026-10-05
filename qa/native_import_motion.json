@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "method": "Actual upstream parseModelJS plus core.work/getInitPhysics; no browser UI import claimed",
+  "frames": 360,
+  "fps": 60,
+  "node_count": 11,
+  "hand_bearing_nodes": [
+    "arm_left",
+    "arm_right"
+  ],
+  "static_sleeved_body_drawn": false,
+  "head_range_degrees": [
+    -12,
+    12
+  ],
+  "expressions": [
+    0,
+    1,
+    2
+  ],
+  "mouth_resources": [
+    "mouth_closed",
+    "mouth_large",
+    "mouth_small",
+    "mouth_medium"
+  ],
+  "manual_mouth_release": true,
+  "external_audioEnergy_and_silence": true,
+  "model_sha256": "14d78e650fd18ea51592300e2ed4a61440c5b42db3fbdd0d4490309d5ee18688",
+  "runtime_sha256": {
+    "modelUtils.mjs": "17660be6e6711e9bed25d95bf5818a40dd673b73bbbdc87927d690cf62be15ec",
+    "core.mjs": "21819046ec87182c2f7b8cc088bfda81657b862d67bbf93090ed2a9d6296386f"
+  }
+}

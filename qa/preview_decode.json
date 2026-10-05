@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "frames": 360,
+  "fps": 60,
+  "duration": 6,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio": false,
+  "video_full_decode": "PASS",
+  "video_bytes": 1626410,
+  "video_sha256": "55d547e503c7cb75e0a4d9d5fbd68af674fcce389a1534cbed4cbb9c78cfc134",
+  "visual_review": "PASS: 10 native-resolved poses reviewed incl +/-12 degree head, arm extrema, three expressions, four mouth states. Exactly two arms/hands; no duplicated static sleeves. Eyes/brows/mouth remain rigidly attached to head.",
+  "method": "Actual upstream-resolved native geometry composited using source PNG alpha; no browser UI test claimed"
+}
